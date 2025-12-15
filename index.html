@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Andreita</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: radial-gradient(circle at top, #fff1f6, #f8b6c8);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.luna {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #ffffff, #f1f1f1);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255,255,255,0.8);
+    z-index: 0;
+}
+
+.lirio {
+    position: fixed;
+    bottom: -100px;
+    font-size: 40px;
+    animation: flotar 12s linear infinite;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.lirio:nth-child(1) { left: 10%; animation-duration: 14s; }
+.lirio:nth-child(2) { left: 30%; animation-duration: 16s; }
+.lirio:nth-child(3) { left: 60%; animation-duration: 13s; }
+.lirio:nth-child(4) { left: 80%; animation-duration: 18s; }
+
+@keyframes flotar {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-120vh) rotate(360deg); }
+}
+
+.contenedor {
+    background: white;
+    width: 90%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: aparecer 1.5s ease;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #c44569;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #c44569;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.corazon {
+    font-size: 50px;
+    animation: latir 1.5s infinite;
+    margin: 20px 0;
+}
+
+.oculto { display: none; }
+
+@keyframes latir {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.firma {
+    margin-top: 40px;
+    font-style: italic;
+    color: #c44569;
+    text-align: right;
+}
+</style>
+</head>
+
+<body>
+
+<div class="luna"></div>
+<div class="lirio">🌸</div>
+<div class="lirio">🌸</div>
+<div class="lirio">🌸</div>
+<div class="lirio">🌸</div>
+
+<div class="contenedor" id="pantallaCodigo">
+    <h1>Hola, introduce el código para poder acceder</h1>
+    <div class="corazon">❤️</div>
+    <input type="text" id="codigo" placeholder="Código secreto">
+    <button onclick="verificarCodigo()">Entrar</button>
+</div>
+
+<div class="contenedor oculto" id="pantallaInicio">
+    <h1>Hola Andreita</h1>
+    <div class="corazon">💖</div>
+    <button onclick="mostrarCarta()">Haz clic aquí</button>
+</div>
+
+<div class="contenedor oculto" id="pantallaCarta">
+<h1>Querida Andreita:</h1>
+
+<p>Hoy hago esta carta como mi último acto de amor, debido a que terminó esa hermosa historia que teníamos. Estoy lleno de muchos sentimientos, ya sean miedo, tristeza, enojo y decepción, y raramente estoy sintiendo mucho amor. Me estoy dando cuenta de que ese sentimiento está predominando sobre todo.</p>
+
+<p>Sé que el poder del amor cura cualquier dolor, pero también sé que lo que esa persona hizo estuvo muy mal y nos afectó tanto a ti como a mí. Me duele sentir cómo mi corazón se derrumba pedazo a pedazo, cómo mi energía se apaga, cómo me asomo a la ventana y no me queda más que mirar esa luna hermosa y recordarte con esa sonrisa, con esa alegría que tenías siempre que estabas a mi lado. Eso es lo que aún me mantiene con un poco de energía: recordar lo felices que éramos juntos me impulsa a querer arreglar esta relación.</p>
+
+<p>Sé que será difícil y no será nada fácil. Como tú dijiste en la carta que me hiciste:</p>
+
+<p><em>“sé que no todo será perfecto. Sería una mentira decir que no vamos a tener problemas o discusiones. Pero también sé que si es contigo, yo estoy lista para afrontarlo. Porque vale la pena, porque tú vales la pena. Y porque aunque tengamos días difíciles, también tenemos esa forma tan bonita de volvernos a encontrar.”</em></p>
+
+<p>Tienes toda la razón al decir que siempre encontramos esa forma de arreglar las cosas. Sé que aún sientes mucho amor por mí; en el fondo sabes que no fallé, pero tu miedo está siendo más grande que cualquier otro sentimiento, y te entiendo. Estamos lejos, son kilómetros los que nos separan, y es muy difícil creer en mis palabras después de lo que viste, que hasta yo mismo dudé de mí.</p>
+
+<p>Si llegas a ver esto, fue con ayuda de Angelito. Quiero que sepas que desde el comienzo no te escogí yo. Dios te puso en mi camino. Yo no quería ir, fui obligado, y regresé enamorado. A medida que pasó el tiempo nos conocimos más: vi lo caprichosa que eras, pero también lo amorosa, bondadosa, amable, inteligente y carismática. Vi en ti todo lo que me gustaría ver en mi novia, confiaré en Dios, y le pediré hasta de rodillas que me dé una oportunidad para seguir contigo.</p>
+
+<p>Fuiste la mujer que despertó en mí tantas cosas que, en cuestión de meses, ya quería oficializar, ya quería presentarte a mi mamá, ya quería estar contigo 24/7. Empecé a demostrarte absolutamente todo para que supieras quién era realmente. Sabía que mis buenos actos vendrían acompañados de gratitudes que me encantaban, como cuando me decías “ay, qué caballeroso”, o cuando después de decirte las palabras más sinceras soltabas una sonrisa y me decías “tu parla es muy buena Carlitos”, cuando claramente estaba siendo sincero.</p>
+
+<p>Recuerdo, y me da como cosita, saber que posiblemente ya no tendré quien me ponga la mano para bajar las escaleras, que posiblemente no tendré con quién ir a misa y cosas así. Como último, me gustaría decirte que te amo, y que sé que no duramos mucho, pero no necesité años para darme cuenta de todo el potencial que teníamos juntos, de esa conexión que confirmaba tantas cosas.</p>
+
+<p>Sé que juntos el amor es más grande que absolutamente todo, pero lastimosamente toca confiar en el proceso, y será difícil hacerlo. No siendo más, me gustaría decirte que quiero intentar las cosas contigo, quiero que seas mi novia, y sé que llegarás a ser más que eso. En caso de no querer seguir, me dolerá en el alma, pero respetaré tu decisión.</p>
+
+<p>Quiero que sepas que siempre estaré esperándote, y espero que cada vez que veas los lirios me recuerdes. Eres y serás mi delirio. Siempre me duele saber que no te olvidaré; te veré cada noche al salir a mi balcón.</p>
+
+<p>Te amo, y espero que este último intento me sirva.<br>
+Dios te bendiga, te cuide y te libre de malas horas hoy, mañana y siempre.</p>
+
+<div class="firma">
+Te amo,<br>
+Mi Andreita
+</div>
+</div>
+
+<script>
+const pantallaCodigo = document.getElementById("pantallaCodigo");
+const pantallaInicio = document.getElementById("pantallaInicio");
+const pantallaCarta = document.getElementById("pantallaCarta");
+
+function verificarCodigo() {
+    const codigo = document.getElementById("codigo").value;
+    if (codigo === "0303-2026") {
+        pantallaCodigo.classList.add("oculto");
+        pantallaInicio.classList.remove("oculto");
+    } else {
+        alert("Ese no es el código correcto 💔");
+    }
+}
+
+function mostrarCarta() {
+    pantallaInicio.classList.add("oculto");
+    pantallaCarta.classList.remove("oculto");
+}
+</script>
+
+</body>
+</html>
